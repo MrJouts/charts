@@ -2,6 +2,9 @@
 Chart.defaults.global.defaultFontFamily = 'Open Sans';
 Chart.defaults.global.legend.fontSize = 20;
 
+Chart.plugins.unregister(ChartDataLabels);
+
+// Chart.defaults.global.plugins.datalabels.font.size = 20;
 
 // Dias pormedio de las operaciones
 var operaciones = document.getElementById('operaciones').getContext('2d');
@@ -143,6 +146,7 @@ var myPieChart = new Chart(mes, {
       borderWidth: 1
     }]
   },
+  plugins: [ChartDataLabels],
   options: {
     scales: {
       yAxes: [{
@@ -153,22 +157,21 @@ var myPieChart = new Chart(mes, {
     },
     legend: {
       display: false
+    },
+    plugins: {
+      datalabels: {
+        backgroundColor: "white",
+        borderRadius: 3,
+        borderWidth: 1,
+        borderColor: "#ddd",
+        font: {
+          size: 15,
+          weight: "bold",
+          lineHeight: 1.5
+        },
+        padding: {top: 5, left: 10, bottom: 5, right: 10 },
+        align: "center"
+      }
     }
-  },
-  onAnimationComplete: function () {
-
-    var ctx = this.chart.mes;
-    // ctx.font = this.scale.font;
-    ctx.fillStyle = this.scale.textColor
-    ctx.textAlign = "center";
-    ctx.textBaseline = "bottom";
-
-    this.datasets.forEach(function (dataset) {
-      dataset.points.forEach(function (points) {
-        ctx.fillText(points.value, points.x, points.y - 10);
-      });
-    })
   }
 });
-
-
