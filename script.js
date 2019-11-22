@@ -1,3 +1,9 @@
+// Graph
+let colorGraph1 = '#F7464A';
+let colorGraph2 = '#46BFBD';
+let colorGraph3 = '#FDB45C';
+let colorGraph4 = '#4D5360';
+
 // Generales
 Chart.defaults.global.defaultFontFamily = 'Open Sans';
 Chart.defaults.global.legend.fontSize = 20;
@@ -14,16 +20,11 @@ var myChart = new Chart(operaciones, {
     labels: ['En curso', 'Finalizadas'],
     datasets: [{
       label: 'Promedio',
-      data: [9.84, 15.6],
+      data: [27.30, 10.5],
       backgroundColor: [
-      'rgba(255, 159, 64, 0.2)',
-      'rgba(54, 162, 235, 0.2)'
-      ],
-      borderColor: [
-      'rgba(255, 159, 64, 1)',
-      'rgba(54, 162, 235, 1)'
-      ],
-      borderWidth: 1
+      colorGraph1,
+      colorGraph2
+      ]
     }]
   },
   options: {
@@ -50,16 +51,10 @@ var myPieChart = new Chart(dias, {
       label: '# of Votes',
       data: [3, 96, 1],
       backgroundColor: [
-      'rgba(255, 99, 132, 0.2)',
-      'rgba(54, 162, 235, 0.2)',
-      'rgba(255, 206, 86, 0.2)',
-      ],
-      borderColor: [
-      'rgba(255, 99, 132, 1)',
-      'rgba(54, 162, 235, 1)',
-      'rgba(255, 206, 86, 1)'
-      ],
-      borderWidth: 1
+      colorGraph1,
+      colorGraph2,
+      colorGraph3,
+      ]
     }]
   },
   options: {
@@ -90,16 +85,11 @@ var myPieChart = new Chart(clientes, {
     labels: ['Nuevos', 'Vigentes'],
     datasets: [{
       label: '# of Votes',
-      data: [22, 78],
+      data: [10, 90],
       backgroundColor: [
-      'rgba(255, 99, 132, 0.2)',
-      'rgba(54, 162, 235, 0.2)'
-      ],
-      borderColor: [
-      'rgba(255, 99, 132, 1)',
-      'rgba(54, 162, 235, 1)'
-      ],
-      borderWidth: 1
+      colorGraph1,
+      colorGraph2
+      ]
     }]
   },
   options: {
@@ -128,15 +118,15 @@ var myPieChart = new Chart(mes, {
       label: 'Operaciones',
       data: [5, 51, 117, 62, 83, 21],
       backgroundColor: [
-      'rgba(255, 99, 132, 0.2)',
-      'rgba(54, 162, 235, 0.2)',
-      'rgba(255, 206, 86, 0.2)',
-      'rgba(75, 192, 192, 0.2)',
-      'rgba(153, 102, 255, 0.2)',
-      'rgba(255, 159, 64, 0.2)'
+      'rgba(253, 180, 92, 0.4)',
+      'rgba(54, 162, 235, 0.4)',
+      'rgba(255, 206, 86, 0.4)',
+      'rgba(75, 192, 192, 0.4)',
+      'rgba(153, 102, 255, 0.4)',
+      'rgba(255, 159, 64, 0.4)'
       ],
       borderColor: [
-      'rgba(255, 99, 132, 1)',
+      'rgba(253, 180, 92, 1)',
       'rgba(54, 162, 235, 1)',
       'rgba(255, 206, 86, 1)',
       'rgba(75, 192, 192, 1)',

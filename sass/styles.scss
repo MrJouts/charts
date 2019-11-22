@@ -1,0 +1,113 @@
+@import 'variables';
+
+body {
+	font-family: "Open sans", Roboto;
+	background-color: #f7f7f7;
+	color: $color-primary;
+}
+
+h1 {
+	font-weight: 300;
+	font-size: 2rem;
+}
+
+h1 span {
+	font-weight: 700;
+}
+
+h2 {
+	font-size: 1.25rem;
+}
+
+/*Header*/
+header {
+	background-color: #fff;
+	box-shadow: 0 3px 6px rgba(0,0,0,.1);
+}
+
+/*Card*/
+.card {
+	box-shadow: 0 1px 6px rgba(0,0,0,.05);
+}
+
+.card-header {
+	background-color: #fff;
+}
+
+/*Card mini*/
+.card-mini {
+	display: flex;
+	flex-direction: row;
+	-ms-align-items: center;
+	align-items: center;
+	padding: 1.5rem 2rem;
+	min-height: 130px;
+}
+
+.card-mini i {
+	font-size: 2rem;
+	margin-right: 2.5rem;
+	margin-left: .5rem;
+}
+
+.card-mini-1 i {
+	color: $color-graph-1;
+}
+
+.card-mini-2 i {
+	color: $color-graph-2;
+}
+
+.card-mini-3 i {
+	color: $color-graph-3;
+}
+
+.card-mini-4 i {
+	color: $color-graph-4;
+}
+
+.card-mini h2 {
+	font-weight: 700;
+	text-transform: uppercase;
+	font-size: .85rem;
+}
+
+.card-mini .card-value {
+	font-size: 2rem;
+	font-weight: 300;
+	line-height: 100%;
+	margin-bottom: .5rem;
+}
+
+.card-mini div {
+	display: flex;
+	flex-direction: column;
+}
+
+/*Galicia Logo*/
+
+.galicia-logo {
+	width: 180px;
+}
+
+
+/*Card progress*/
+
+.card-progress h3, .card-progress span {
+	font-size: 1rem;
+	font-weight: 600;
+	margin-bottom: 0;
+}
+
+.progress {
+	background-color: #eaeaea;
+	
+	.bg-success {
+		
+	}
+
+	.bg-warning {
+
+	}
+
+}
